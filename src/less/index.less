@@ -1,0 +1,104 @@
+.wh (@w, @h) {
+    width: @w / 64rem;
+    height: @h / 64rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    padding: 0 20/64rem;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+header {
+    .wh(600, 400);
+    margin: 20/64rem 0;
+    background: rgb(164, 164, 164);
+}
+.container {
+    position: relative;
+    .content {
+        width: 290/64rem;
+        border: 1px solid rgb(236, 236, 236);
+        border-radius: 6px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .img-wapper {
+        .wh(290, 290);
+        color: #fff;
+        background: blue;
+        overflow: hidden;
+        .time-inf {
+            margin: 230/64rem 0 0 10/64rem;
+        }
+        .date-l {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .date-r {
+            font-size: 10px;
+        }
+        .pos-inf {
+            font-size: 12px;
+            margin-left: 10/64rem;
+            .pos-ico{
+                float: left;
+                height: 22/64rem;
+                width: 22/64rem;
+                margin-top: 1/64rem;
+            }
+        }
+    }
+    .inf-wapper {
+        width: 250/ 64rem;
+        padding: 20/64rem 20/64rem 0 20/64rem;
+    }
+    .user-img {
+        .wh(50, 50);
+        margin: 20/64rem 10/64rem 0 0;
+        border-radius: 100%;
+        float: left;
+    }
+    .user-trd {
+        font-size: 16px;
+        color: rgb(164, 164, 164)
+    }
+    .user-inf {
+        line-height: 90 / 64rem;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+[data-dpr='2'] .date-l {
+    font-size: 28px !important;
+}
+[data-dpr='3'] .date-l {
+    font-size: 42px !important;
+}
+[data-dpr='2'] .date-r {
+    font-size: 20px !important;
+}
+[data-dpr='3'] .date-r {
+    font-size: 30px !important;
+}
+[data-dpr='2'] .pos-inf {
+    font-size: 24px !important;
+}
+[data-dpr='3'] .pos-inf {
+    font-size: 36px !important;
+}
+[data-dpr='2'] .user-trd {
+    font-size: 32px !important;
+}
+[data-dpr='3'] .user-trd {
+    font-size: 48px !important;
+}
+[data-dpr='2'] .container .user-inf {
+    font-size: 32px;
+}
+[data-dpr='3'] .container .user-inf {
+    font-size: 48px;
+}
