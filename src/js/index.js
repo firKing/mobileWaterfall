@@ -60,7 +60,7 @@ class Waterfall extends isSomething {
                     headurl = item.head;
                 item = this.createNode(item, left, top);
                 $(item).find('.img-wapper').css({
-                    background: 'url(${imgurl})',
+                    background: `url(${imgurl})`,
                     'background-size': '100%'
                 });
                 $(item).find('.user-img').attr('src', headurl);
