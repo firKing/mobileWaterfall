@@ -66,7 +66,6 @@ class Waterfall extends isSomething {
                 $(item).find('.user-img').attr('src', headurl);
             }
 
-            this.layout[i].len++;
             this.layout[i].height += parseFloat(getComputedStyle(item, null)['height']) + this.dis - 4;
         }.bind(this));
     }
